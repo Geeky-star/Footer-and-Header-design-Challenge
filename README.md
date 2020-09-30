@@ -12,10 +12,9 @@ This repository is to help developers to get beautiful designs within no time.
 
 - Fork this repository
 - Create a folder inside the templates folder
-- Create a single file for header and footer
 - Make all the files(html, css files) you code inside the folder you created
 - Create a text file inside your folder and write your name in it
 - Create pull request
-- Done! we will merge your folder
+- And you are Done! 
 
 And yes, your contribution is done.
