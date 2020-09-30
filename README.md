@@ -1,7 +1,12 @@
 # Footer-and-Header-design-templates
 Contribute your design in Footer and Header design templates using HTML, CSS, JavaScript
 
-This repository is created to get a bunch of designs of headers and footers.
+This repository is a collection of header and footer designs.
+
+# Why this Repository?
+
+Creating beautiful header and footer designs for each web app from scratch is time consuming. 
+This repository is to help developers to get beautiful designs within no time.
 
 # How you can contribute?
 
