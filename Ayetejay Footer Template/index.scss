@@ -1,0 +1,49 @@
+$main-color: #101010;
+$secondary-color: #adff2f;
+$tertiary-color: #727272;
+$link-font: "1rem";
+$font-family: "Helvetica";
+
+body {
+  margin: 0;
+}
+
+@mixin standard-text($lineHeight, $fontSize) {
+  color: $tertiary-color;
+  font-family: $font-family;
+  line-height: $lineHeight;
+  font-size: $fontSize;
+  letter-spacing: 0.5px;
+}
+
+.footer {
+  display: flex;
+  padding: 0 3rem;
+  flex-direction: column;
+  background-color: $main-color;
+  a {
+    font-size: $link-font;
+    color: $secondary-color;
+  }
+}
+.top-row {
+  padding: 3rem;
+}
+.address-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  p {
+    color: $tertiary-color;
+    line-height: 1.6rem;
+    font-family: $font-family;
+    margin: 0.5rem 0 0 0;
+  }
+}
+.bottom-row {
+  padding: 2rem 3rem;
+  border-top: 1px solid $tertiary-color;
+  p {
+    @include standard-text(1.2rem, 0.8rem);
+  }
+}

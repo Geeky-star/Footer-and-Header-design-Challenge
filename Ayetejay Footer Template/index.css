@@ -1,3 +1,44 @@
+body {
+  margin: 0;
+}
 
+.footer {
+  display: flex;
+  padding: 0 3rem;
+  flex-direction: column;
+  background-color: #101010;
+}
+.footer a {
+  font-size: "1rem";
+  color: #adff2f;
+}
+
+.top-row {
+  padding: 3rem;
+}
+
+.address-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.address-block p {
+  color: #727272;
+  line-height: 1.6rem;
+  font-family: "Helvetica";
+  margin: 0.5rem 0 0 0;
+}
+
+.bottom-row {
+  padding: 2rem 3rem;
+  border-top: 1px solid #727272;
+}
+.bottom-row p {
+  color: #727272;
+  font-family: "Helvetica";
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
 
 /*# sourceMappingURL=index.css.map */
