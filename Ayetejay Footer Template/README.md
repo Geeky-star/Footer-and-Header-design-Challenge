@@ -1,0 +1,1 @@
+© Adam Jones, Ayeteejay.com
