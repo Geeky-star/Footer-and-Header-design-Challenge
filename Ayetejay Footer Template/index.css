@@ -8,9 +8,9 @@ body {
   flex-direction: column;
   background-color: #101010;
   font-family: "Helvetica", sans-serif;
+  font-size: 1rem;
 }
 .footer a {
-  font-size: "1rem";
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
@@ -19,18 +19,30 @@ body {
   color: #066cff;
 }
 .footer ul {
+  padding: 0 2rem;
   text-decoration: none;
   color: #fff;
   list-style-type: none;
-  padding: 0 2rem;
   margin: 0;
 }
 .footer li {
-  font-size: "1rem";
   margin: 0 0 0.7rem 0;
 }
 .footer span {
   font-weight: bold;
+}
+.footer h3 {
+  color: #727272;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  margin: 0 0 0.5rem 0;
+  color: #fff;
+}
+.footer p {
+  color: #727272;
+  line-height: 1.6rem;
+  margin: 0.5rem 0 0 0;
 }
 
 .link-row {
@@ -39,28 +51,13 @@ body {
   justify-content: space-between;
 }
 
-.address-block {
+.address-column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.address-block h3 {
-  color: #727272;
-  font-family: "Helvetica", sans-serif;
-  line-height: 1.5rem;
-  font-size: 1.3rem;
-  letter-spacing: 0.5px;
-  margin: 0 0 0.5rem 0;
-  color: #fff;
-}
-.address-block p {
-  color: #727272;
-  line-height: 1.6rem;
-  font-family: "Helvetica", sans-serif;
-  margin: 0.5rem 0 0 0;
-}
 
-.link-block {
+.link-column {
   display: flex;
 }
 
@@ -73,36 +70,39 @@ body {
 }
 .social-row p {
   color: #727272;
-  font-family: "Helvetica", sans-serif;
   line-height: 1.2rem;
   font-size: 0.8rem;
   letter-spacing: 0.5px;
 }
 
-.social-block a {
+.copyright-column p {
+  margin: 0;
+}
+
+.social-column a {
   text-decoration: none;
   padding: 0 0.5rem;
   color: #727272;
-  font-family: "Helvetica", sans-serif;
   line-height: 1.2rem;
   font-size: 0.8rem;
   letter-spacing: 0.5px;
 }
-.social-block a:hover {
+.social-column a:hover {
   color: #066cff;
 }
 
 @media (max-width: 600px) {
-  .link-block {
+  .link-column {
     flex-direction: column;
   }
-  .link-block ul {
+  .link-column ul {
     padding: 0;
     margin: 1.5rem 0 0 0;
   }
 
   .link-row {
     flex-direction: column;
+    padding: 3rem 2rem;
   }
 
   .footer {
@@ -114,8 +114,8 @@ body {
     padding: 2rem 0 4rem 0;
   }
 
-  .copyright-block p {
-    line-height: 0.1rem;
+  .copyright-column p {
+    line-height: 1.5rem;
   }
 }
 

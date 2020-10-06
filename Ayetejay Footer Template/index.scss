@@ -1,8 +1,8 @@
-$main-color: #101010;
+$primary-color: #101010;
 $secondary-color: #066cff;
 $secondary-gray: #727272;
 $secondary-white: #fff;
-$link-font: "1rem";
+$link-font: 1rem;
 $font-family: "Helvetica", sans-serif;
 
 body {
@@ -11,21 +11,21 @@ body {
 
 @mixin standard-text($lineHeight, $fontSize) {
   color: $secondary-gray;
-  font-family: $font-family;
   line-height: $lineHeight;
   font-size: $fontSize;
   letter-spacing: 0.5px;
 }
-
+@mixin standard-padding {
+  padding: 0 2rem;
+}
 .footer {
   display: flex;
   padding: 0 3rem;
   flex-direction: column;
-  background-color: $main-color;
+  background-color: $primary-color;
   font-family: $font-family;
-
+  font-size: $link-font;
   a {
-    font-size: $link-font;
     color: $secondary-white;
     text-decoration: none;
     transition: 0.3s;
@@ -34,29 +34,18 @@ body {
     color: $secondary-color;
   }
   ul {
+    @include standard-padding();
     text-decoration: none;
     color: $secondary-white;
     list-style-type: none;
-    padding: 0 2rem;
     margin: 0;
   }
   li {
-    font-size: $link-font;
     margin: 0 0 0.7rem 0;
   }
   span {
     font-weight: bold;
   }
-}
-.link-row {
-  padding: 3rem;
-  display: flex;
-  justify-content: space-between;
-}
-.address-block {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   h3 {
     @include standard-text(1.5rem, 1.3rem);
     margin: 0 0 0.5rem 0;
@@ -65,11 +54,20 @@ body {
   p {
     color: $secondary-gray;
     line-height: 1.6rem;
-    font-family: $font-family;
     margin: 0.5rem 0 0 0;
   }
 }
-.link-block {
+.link-row {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.address-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.link-column {
   display: flex;
 }
 .social-row {
@@ -82,9 +80,12 @@ body {
     @include standard-text(1.2rem, 0.8rem);
   }
 }
-.copyright-block {
+.copyright-column {
+  p {
+    margin: 0;
+  }
 }
-.social-block {
+.social-column {
   a {
     text-decoration: none;
     padding: 0 0.5rem;
@@ -96,7 +97,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .link-block {
+  .link-column {
     flex-direction: column;
     ul {
       padding: 0;
@@ -105,17 +106,18 @@ body {
   }
   .link-row {
     flex-direction: column;
+    padding: 3rem 2rem;
   }
   .footer {
-    padding: 0 2rem;
+    @include standard-padding();
   }
   .social-row {
     flex-direction: column;
     padding: 2rem 0 4rem 0;
   }
-  .copyright-block {
+  .copyright-column {
     p {
-      line-height: 0.1rem;
+      line-height: 1.5rem;
     }
   }
 }
