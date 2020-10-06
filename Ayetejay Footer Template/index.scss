@@ -3,7 +3,7 @@ $secondary-color: #066cff;
 $secondary-gray: #727272;
 $secondary-white: #fff;
 $link-font: "1rem";
-$font-family: "Helvetica";
+$font-family: "Helvetica", sans-serif;
 
 body {
   margin: 0;
@@ -38,10 +38,11 @@ body {
     color: $secondary-white;
     list-style-type: none;
     padding: 0 2rem;
+    margin: 0;
   }
   li {
     font-size: $link-font;
-    margin: 0.8rem 0;
+    margin: 0 0 0.7rem 0;
   }
   span {
     font-weight: bold;
@@ -91,5 +92,30 @@ body {
   }
   a:hover {
     color: $secondary-color;
+  }
+}
+
+@media (max-width: 600px) {
+  .link-block {
+    flex-direction: column;
+    ul {
+      padding: 0;
+      margin: 1.5rem 0 0 0;
+    }
+  }
+  .link-row {
+    flex-direction: column;
+  }
+  .footer {
+    padding: 0 2rem;
+  }
+  .social-row {
+    flex-direction: column;
+    padding: 2rem 0 4rem 0;
+  }
+  .copyright-block {
+    p {
+      line-height: 0.1rem;
+    }
   }
 }
