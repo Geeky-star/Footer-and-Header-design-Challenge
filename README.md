@@ -11,7 +11,7 @@ This repository is to help developers to get beautiful designs within no time.
 ## How you can contribute?
 
 - Fork this repository
-- Create a folder inside the templates folder
+- Create a folder inside the main folder
 - Make all the files(html, css files) you code inside the folder you created
 - Create a text file inside your folder and write your name in it
 - Create pull request
@@ -90,7 +90,7 @@ Now commit those changes using the `git commit` command:
 git commit -m "(Add your message here)"
 ```
 
-replacing `<Add your message here>` with your message.
+replacing `<Add your message here>` with your message like "Initial commit".
 
 ## Push changes to GitHub 🪂
 
