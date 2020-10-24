@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap");
+
+body {
+  margin: 0;
+}
+$navy: #000068;
+$dark-navy: #000c2d;
+$white: #fff;
+$green: #20de86;
+
+$xsmall: 0.5rem;
+$small: 0.8rem;
+$medium: 1rem;
+$large: 2rem;
+$xlarge: 3rem;
+
+$sans-serf: "Work Sans", sans-serif;
+$serif: "Cormorant", serif;
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.brand-col {
+  background-color: $navy;
+  padding: 2rem;
+  height: 20vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  h3 {
+    font-size: $large;
+    font-family: $serif;
+    color: $white;
+    line-height: 2rem;
+  }
+}
+.legal-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-size: $xsmall;
+    color: $white;
+    font-family: $sans-serf;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  a:hover {
+    color: $green;
+  }
+  p {
+    font-size: $xsmall;
+    color: $white;
+    font-family: $sans-serf;
+  }
+}
+.link-col {
+  background-color: white;
+}
