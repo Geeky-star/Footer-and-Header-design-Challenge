@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap");
+
+body {
+  margin: 0;
+}
+
+// Brand Colors
+$navy: #000068;
+$dark-navy: #000c2d;
+$white: #fff;
+$green: #20de86;
+
+// Sizing
+$xsmall: 0.5rem;
+$small: 0.8rem;
+$medium: 1rem;
+$large: 1.5rem;
+$xlarge: 2rem;
+
+// Brand Fonts
+$sans-serf: "Work Sans", sans-serif;
+$serif: "Cormorant", serif;
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  @media only screen and(max-width:600px) {
+    display: flex;
+    flex-flow: column;
+  }
+  a {
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  a:hover {
+    color: $green;
+  }
+}
+.brand-col {
+  background-color: $navy;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  h3 {
+    font-size: $xlarge;
+    font-family: $serif;
+    color: $white;
+    line-height: $xlarge;
+  }
+  @media only screen and (max-width: 600px) {
+    order: 2;
+    padding: 2rem 3rem;
+  }
+}
+.legal-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    font-size: $xsmall;
+    color: $white;
+    font-family: $sans-serf;
+  }
+  p {
+    font-size: $xsmall;
+    color: $white;
+    font-family: $sans-serf;
+  }
+}
+.link-col {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  @media only screen and (max-width: 600px) {
+    order: 1;
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    ul {
+      padding: 1rem 3rem;
+    }
+  }
+  ul {
+    list-style: none;
+    line-height: $large;
+  }
+  li {
+    font-family: $sans-serf;
+    font-size: $small;
+  }
+  li:nth-child(1) {
+    border-top: 1px solid $navy;
+    letter-spacing: 0.5px;
+    padding: 1rem 0 0 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  a {
+    color: $dark-navy;
+  }
+}
