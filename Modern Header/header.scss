@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+// Brand Colors
+$blue: #1a3be2;
+$white: #fff;
+$black: #212121;
+
+// Sizing
+$xsmall: 0.5rem;
+$small: 0.8rem;
+$medium: 1rem;
+$large: 1.5rem;
+$xlarge: 2rem;
+
+// Breakpoints
+$small-device: 600px;
+$large-device: 1000px;
+
+// Brand Fonts
+$sans-serf: "Lato", sans-serif;
+
+body {
+  margin: 0;
+}
+.header {
+  font-family: $sans-serf;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0px 0px 10px rgba($black, 0.2);
+  transition: 0.6s;
+  a,
+  p,
+  button {
+    font-size: $medium;
+  }
+}
+.announcement-bar {
+  background-color: $blue;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  a {
+    color: $white;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  @media only screen and (max-width: $large-device) {
+    padding: $xsmall $medium;
+    a,
+    p {
+      font-size: $small;
+      text-align: center;
+    }
+  }
+}
+.navigation-bar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: $medium 0;
+  a {
+    transition: 0.5s;
+    text-decoration: none;
+    color: $black;
+  }
+  a:hover {
+    color: $blue;
+  }
+}
+.company-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 $xlarge;
+  a {
+    font-weight: bold;
+    font-size: $medium;
+    white-space: nowrap;
+  }
+}
+.link-col {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  li {
+    padding: 0 $xlarge;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  li:hover:nth-child(-n + 5) {
+    transform: translate(0, -4px);
+  }
+  @media only screen and (max-width: $large-device) {
+    display: none;
+  }
+}
+
+.cta-button {
+  background-color: $blue;
+  border-radius: $xlarge;
+  padding: $small $large;
+  color: $white !important;
+  transition: 0.5s;
+}
+.cta-button:hover {
+  background-color: $black;
+}
+
+.menu-button {
+}
+
+.menu-button > div {
+  width: 25px;
+  height: 2px;
+  background-color: $black;
+  margin: 5px 0;
+}
+.link-col-mobile {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 $large;
+  cursor: pointer;
+  @media only screen and (min-width: $large-device) {
+    display: none;
+  }
+}
+
+.mobile-overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  background-color: rgba($blue, 0.9);
+  transition: 0.5s;
+  overflow-y: hidden;
+  a,
+  p {
+    font-size: $large;
+    font-family: sans-serif;
+    color: $white;
+  }
+  @media only screen and (max-width: $large-device) {
+    a,
+    p {
+      font-size: 4rem;
+    }
+  }
+  @media only screen and (max-width: $small-device) {
+    a,
+    p {
+      font-size: $xlarge;
+    }
+  }
+}
+.mobile-menu {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  height: 100vh;
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  li {
+    transition: 0.3s;
+    margin: $xsmall 0;
+  }
+}
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+  p {
+    padding: $small $large;
+    font-size: $small;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
