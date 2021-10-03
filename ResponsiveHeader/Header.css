@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #006d77;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin: auto 5px;
+  text-decoration: none;
+  font-size: 18px; 
+  font-weight: 400;
+  line-height: 25px;
+  position: relative;
+}
+
+.header a.logo {
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.header a.logo:hover {
+    transform: translate(0, -10px);
+}
+
+.header a.menu:after {
+	content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+
+.header a.menu:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.header a.testimonials {
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.header a.testimonials:hover {
+    background-color: #fff;
+    color: #006d77;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header a.testimonials {
+        border: none;
+    }
+
+    .header a.testimonials:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        height: 1em;
+        width: 100%;
+        border-bottom: 2px solid #fff;
+        margin-top: 10px;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: scale(0,1);
+        transform: scale(0,1);
+    }
+
+    .header a.testimonials:hover {
+        background-color: inherit;
+        color: #fff;
+    }
+
+    .header a.testimonials:hover:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .header-right {
+        float: none;
+    }
+}
