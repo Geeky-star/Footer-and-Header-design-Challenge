@@ -1,0 +1,364 @@
+:root {
+    --primary: #FF865E;
+    --secondary: #231e20;
+    --bg-color: #8a3ab9;
+    --ad-color: #4b3869;
+    --link: #f39007;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 96vw;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
+.wrap {
+    padding-bottom: 10rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: var(--primary);
+    font-weight: bold;
+    font-family: 'Glory', sans-serif;
+    font-size: 1.8rem;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+header .menu-item {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 0.9rem;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+header .menu-item i {
+    margin-right: 0.3rem;
+    display: none;
+}
+
+header .menu a {
+    color: var(--secondary);
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+header .menu-item:hover a {
+    opacity: 1;
+    color: var(--primary);
+}
+
+header .burger {
+    display: none;
+}
+
+header .close-menu  {
+    display: none;
+}
+
+header i {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 762px) {
+    header .burger {
+        display: block;
+        color: var(--secondary);
+        position: absolute;
+        right: 1rem;
+    } 
+
+    header .close-menu-icon {
+        display: block;
+        color: var(--secondary);
+        position: absolute;
+        right: 16rem;
+    }
+
+    
+    header ul {
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+        right: -100%;
+        background-color: var(--primary);
+        width: 40%;
+        top: 0;
+        height: 100vh;
+        transition: all .5s ease;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+}
+
+    header ul.mobile-menu {
+        right: 0;
+    }
+
+    header .menu a {
+        color: white;
+    }
+}
+
+.development {
+    background-color: var(--ad-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 0.8rem 0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    color: white;
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+}
+
+.development h4 {
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.development a {
+    font-size: 1.1rem;
+    color: var(--link);
+}
+
+.development i {
+    font-size: small;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    padding-top: 4rem;
+    border-top: 1px solid rgb(230, 227, 227);
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer .social-media ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+footer .social-media i {
+    font-size: 1.4rem;
+    color: var(--secondary);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+footer .social-media i:hover {
+    color: var(--primary);
+}
+
+footer .hours h5 {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--secondary);
+
+}
+
+footer .hours span {
+    font-weight: normal;
+    text-transform: lowercase;
+    color: var(--secondary);
+}
+
+footer .hours h4 {
+    margin: 0;
+}
+
+footer .hours hr {
+    margin: 0.2rem 0 0.8rem 0;
+    border: none;
+    height: 2px;
+    background-color: var(--link);
+    max-width: 40px;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+footer li {
+    margin: 0.8rem 0;
+    font-size: 1.1rem;
+}
+
+footer li a {
+    color: var(--secondary);
+    transition: all, 0.5s ease;
+    -webkit-transition: all, 0.5s ease;
+    -moz-transition: all, 0.5s ease;
+    -ms-transition: all, 0.5s ease;
+    -o-transition: all, 0.5s ease;
+}
+
+footer li a:hover {
+    color: var(--primary);
+}
+
+footer .quick-links i {
+    font-size: small;
+    margin-right: 0.2rem;
+}
+
+footer .our-contact li:last-child {
+    display: flex;
+    align-items: center;
+}
+
+footer .our-contact li:last-child i {
+    font-size: 2rem;
+}
+
+footer .our-contact i {
+    opacity: 0.65;
+    margin-right: 0.3rem;
+}
+
+.copyright {
+    margin-top: 2rem;
+    padding: 1.5rem 0 1rem 0;
+    background-color: var(--primary);
+    color: white;
+    font-weight: normal;
+}
+
+.copyright .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright .copy {
+    color: white;
+}
+
+.copyright a {
+    color: white;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 800px) {
+    footer .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer .our-services {
+        order: -1;
+    }
+
+    footer .brand {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    footer .copyright .container {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 0.2rem;
+    }
+
+    footer .copy {
+        display: flex;
+        gap: 0.3rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer .container {
+        grid-template-columns: 1fr;
+    }
+
+    footer .brand {
+        order: -1;
+    }
+}
+
+/* End Footer */
