@@ -1,0 +1,43 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+.content{
+    margin: 20px 50px;
+}
+h3{
+    padding: 30px;
+    text-align: center;
+}
+.left-nav{
+    width:60%;
+    display:flex;
+	align-items:center;
+}
+.left-nav .logo{
+	width:25%;
+    text-align:center;
+    margin:0px 4%;
+}
+.right-nav{
+    width:40%;
+    text-align:right;
+    margin-right:30px;
+}
+footer{
+	width:100%;
+	height: 16vh;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	text-transform: uppercase;
+	background-color: rgba(3, 48, 133, 0.822);	
+	color:rgb(219, 218, 218);
+}
+.right-nav .menu a{
+	text-decoration:none;
+	color:rgb(219, 218, 218);
+    margin-right:10px;
+}
