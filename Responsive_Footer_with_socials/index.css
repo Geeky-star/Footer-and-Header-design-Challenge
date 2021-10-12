@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
+}
+.main-content{
+    height:80vh;
+    background-color: bisque;
+}
+.page-footer{
+    background-color: cadetblue;
+}
+.end-container{
+    margin: auto;
+}
+#socials-logo{
+    color:white
+}
