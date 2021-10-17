@@ -1,0 +1,12 @@
+.navbar {
+    background-color: rgb(221, 233, 166);
+}
+
+.navbar a{
+    color: black;
+}
+
+main{
+    margin:80px 30px 10px;
+    text-align: center;
+}
