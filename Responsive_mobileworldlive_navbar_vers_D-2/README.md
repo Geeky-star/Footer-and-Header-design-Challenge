@@ -15,5 +15,6 @@ Initially, the navbar looks like (www.mobileworldlive.com):
 ## Live Demo
 
 <p align="left">
-<img src="img/my_vers_d.png" width="600">
+<a href="https://dilshadnoshad.github.io/MobileWorldLive-Navbar/">
+<img src="img/my_vers_d.png" width="600"></a>
 </p>
