@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header-wrap {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 40px;
+}
+
+.header-wrap.active {
+  -webkit-box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.357);
+          box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.357);
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.links ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links ul li {
+  margin: 0 10px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 5px;
+  padding: 8px 12px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: #000;
+}
+
+.link:hover {
+  background-color: #023047;
+  color: #fff;
+}
+
+.content {
+  padding: 25px 40px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.footer {
+  background-image: -webkit-gradient(linear, left top, right top, from(#131313), to(black));
+  background-image: linear-gradient(to right, #131313 0%, black 100%);
+  color: #fff;
+  padding: 30px 0 15px 0;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-wrap h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.footer-wrap ul {
+  list-style: none;
+}
+
+.footer-wrap ul li {
+  margin-bottom: 8px;
+}
+
+.footer-wrap a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-wrap a:hover {
+  color: #96e6a1;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+  color: #eee;
+  line-height: 1.5;
+}
