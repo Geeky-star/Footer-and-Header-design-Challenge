@@ -9,11 +9,11 @@
 Initially, the navbar looks like (www.mobileworldlive.com):
 
 <p align="center">
-<img src="img/real.png" width="200">
+<img src="img/real.png" width="400">
 </p>
 
 ## Live Demo
 
 <p align="center">
-<img src="img/my_vers_d.png" width="200">
+<img src="img/my_vers_d.png" width="400">
 </p>
