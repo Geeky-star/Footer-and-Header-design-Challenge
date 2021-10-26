@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1;
+
+  background: linear-gradient(180deg, #F3F4F6 0%, #F9FAFB 50.93%, #FFFFFF 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    max-width: 80rem;
+    margin: 2.5rem auto 0;
+    background: linear-gradient(180deg, #FAFAFA 0%, #F5F6F7 100%);
+    border: .25rem solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0 1.5rem 2.25rem rgb(17 24 39 / 6%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(180deg, #44BBFE 0%, #1E78FE 100%);
+    background-size: cover;
+    border: .25rem solid #6FB8FE;
+    box-shadow: 0px 1.5rem 2.5rem rgba(32, 124, 254, 0.4);
+    border-radius: 1rem;
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-wrapper nav {
+    margin-right: 2.5rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px
+}
+.nav-wrapper nav a {
+    font-weight: bold;
+    text-decoration: none;
+    color: hsla(202, 56%, 27%, 1);
+}
+
+.nav-wrapper nav a:hover {
+    color: hsl(202deg 44% 41%);
+}
+button {
+    background: linear-gradient(180deg, #44BBFE 0%, #1E78FE 100%);
+    border: .25rem solid #6FB8FE;
+    box-sizing: border-box;
+    box-shadow: 0px 1.5rem 2.5rem rgba(32, 124, 254, 0.4);
+    border-radius: .5rem;
+    color: white;
+    font-weight: bold;
+    padding: .5rem .75rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+}
