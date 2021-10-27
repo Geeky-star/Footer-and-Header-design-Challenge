@@ -1,0 +1,64 @@
+.footer-1{
+    background-color: gainsboro;
+    height: 320px;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    
+}
+
+.footer-1 .text-1{
+    bottom: 10%;
+    color: black;
+    text-align: center;
+margin-bottom: 0%;
+}
+
+.footer-1 .data{
+    margin: 50px;
+    padding: 50px;
+}
+
+.footer-1 .data .button{
+height: 47px;
+width: 83px;
+margin: 10px;
+padding: 0px;
+color: white;
+background-color: green;
+
+}
+
+.footer-1 .data .heading-1{
+   position: absolute;
+   right: 50%;
+   bottom: 50%;
+    font-size: 20px;
+    color: green;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+.footer-1 .data .heading-2{
+    position: absolute;
+    right: 30%;
+    bottom: 50%;
+     font-size: 20px;
+     color: green;
+     text-align: center;
+     font-weight: bolder;
+ }
+.footer-1 .data .items{
+    position: absolute;
+    text-align: center;
+    right: 50%;
+}
+
+
+.footer-1 .data .items-2{
+    position: absolute;
+    text-align: center;
+    right: 30%;
+}
