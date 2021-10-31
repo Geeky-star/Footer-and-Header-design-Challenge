@@ -1,0 +1,47 @@
+.navbar{
+    background-color: blue;
+    height: 150px;
+    width: 100%;
+    margin: 0px;
+}
+
+.navbar .logo{
+    position: absolute;
+    width: 50px;
+    left: 7%;
+
+    margin: 7px;
+    top: 5%;
+}
+
+.navbar .logo-text{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 12%;
+    top: 8%;
+
+}
+
+.navbar .about{
+    position: absolute;
+    top: 8%;
+    left: 70%;
+    color: white;
+}
+
+
+.navbar .contact{
+    position: absolute;
+    top: 8%;
+    left: 78%;
+    color: white;
+}
+
+
+.navbar .services{
+    position: absolute;
+    top: 8%;
+    left: 85%;
+    color: white;
+}
