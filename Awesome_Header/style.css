@@ -1,0 +1,16 @@
+.header {
+    width: 80%;
+    height: 72px;
+    left: 10%;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.register_login {
+    background: #260FF2;
+    height: 72px;
+    background: -webkit-linear-gradient(top left, #260FF2, #46A2D6);
+    background: -moz-linear-gradient(top left, #260FF2, #46A2D6);
+    background: linear-gradient(to bottom right, #260FF2, #46A2D6);
+    border-radius: 0px 10px 10px 0px;
+}
